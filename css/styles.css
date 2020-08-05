@@ -773,7 +773,18 @@ article#cb01 {
     opacity: 0.7;
 }
  
-.close {
+#close {
     position: absolute;
-    right: 15px;
+    right: -35px;
+}
+#close img{
+  width: 30px;
+}
+#popup iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
