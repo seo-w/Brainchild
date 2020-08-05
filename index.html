@@ -33,13 +33,16 @@
         <div id="intro" class="header-container fs">
             <div class="bcg"></div>
             <header class="wrapper">
-            	<a class="logo" href=""><img src="img/logo-white.png"></a>
-                <h1 class="title">Success for every student with self-paced, personalized learning</h1>
+            	<a  class="logo" href=""><img src="img/logo-white.png"></a>
+                <h1 class="title">Education without compromises</h1>
                 <p>Brainchild is purpose-built to help every student master basic skills and achieve state standards.</p>
             </header>
             <div class="float-device">
             	<img class="device" src="img/sbFrontFrame.png">
             	<img class="float-video" src="img/giphy.gif">
+            	<a id="open" class="play-button" href="#">
+            	<img class="play-button" src="img/play.gif"></a>
+            	<!-- <img class="device-shadow" src="img/shadow.png"> -->
             </div>
             
             <span class="scroll-hint">
@@ -58,7 +61,7 @@
 
         <div id="main" class="main-container">
 
-            <article id="cb01" class="content-block">
+           <!--  <article id="cb01" class="content-block">
                 <div class="wrapper">
                     <header class="slideInUp">
                         <h1>THE VIEWS</h1>
@@ -66,17 +69,112 @@
                     <section>
                         <p class="slideInUp slideInUp2">What is hard to endure is sweet to remember.</p>
                     </section>
-                </div> <!-- .wrapper -->
-            </article>
+                </div> --><!-- .wrapper 
+            </article> -->
+
+
+
+
+
+
+<style type="text/css">
+	.parallaxParent {
+		height: 100vh;
+		overflow: hidden;
+	}
+	.parallaxParent > * {
+		height: 200%;
+		position: relative;
+		top: -100%;
+	}
+</style>
+<div class="spacer s0"></div>
+<div id="parallax1" class="parallaxParent">
+	<div style="background-image: url(img/classroom.jpg);"></div>
+</div>
+<!-- <div class="spacer s1">
+	<div class="box2 blue">
+		<p>Content 1</p>
+		<a href="#" class="viewsource">view source</a>
+	</div>
+</div>
+<div class="spacer s0"></div>
+<div id="parallax2" class="parallaxParent">
+	<div style="background-image: url(img/img_mountains02.jpg);"></div>
+</div>
+<div class="spacer s1">
+	<div class="box2 blue">
+		<p>Content 2</p>
+		<a href="#" class="viewsource">view source</a>
+	</div>
+</div>
+<div class="spacer s0"></div>
+<div id="parallax3" class="parallaxParent">
+	<div style="background-image: url(img/img_mountains03.jpg);"></div>
+</div>
+<div class="spacer s2"></div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             
             <article id="slide01" class="slide fs">
                 <div class="bcg"></div>
                 <div class="wrapper">
                     <header class="slideInUp">
-                        <h1>Switzerland</h1>
+                        <h1>Extra help for students... no extra work for teachers</h1>
                     </header>
                     <section>
-                        <p class="slideInUp slideInUp2">Switzerland is not that great: remove the mountains and what's left ?</p>
+                        <p class="slideInUp slideInUp2">Study Buddy transforms attitudes of struggling students. <br>They gain confidence and self-esteem with personalized learning.
+                        </p>
+                        <div class="image"></div>
+                         <div class="icons">
+	                        <div class="col"><img src="img/multimedia.svg"><p>Multimedia instruction</p></div>
+	                        <div class="col"><img src="img/feedback.svg"><p>Practice <br><sub>with guided feedback</sub></p></div>
+	                        <div class="col"><img src="img/report.svg"><p>Test mode with <br><sub>“Review Mistakes”</sub></p></div>
+	                        <div class="col"><img src="img/Test.svg"><p>Progress report <br>to show scores</p></div>
+                    	</div>
                     </section>
                 </div> <!-- .wrapper -->
             </article>
@@ -84,24 +182,25 @@
             <article id="cb02" class="content-block">
                 <div class="wrapper">
                     <header class="slideInUp">
-                        <h1>THE ADVENTURE</h1>
+                        <h1>Study Buddy</h1>
                     </header>
                     <section>
                         <p class="slideInUp slideInUp2">Getting to the top is optional. Getting down is mandatory.</p>
+                       
                     </section>
                 </div> <!-- .wrapper -->
             </article>
 
             <article id="slide02" class="slide fs">
                 <div class="bcg"></div>
-                <div class="wrapper">
+                <!--<div class="wrapper">
                     <header class="slideInUp">
                         <h1>The Climbing Addiction</h1>
                     </header>
                     <section>
                         <p class="slideInUp slideInUp2">Climbing is hard to give up, it's just as hard to give up as cigarettes.</p>
                     </section>
-                </div> <!-- .wrapper -->
+                </div>  .wrapper -->
             </article>
 
             <article id="cb03" class="content-block">
@@ -165,6 +264,19 @@
             </footer>
         </div>
 
+<div id="popup" style="display: none;">
+    <div class="content-popup">
+        <div class="close"><a href="#" id="close"><img src="images/close.png"/></a></div>
+        <div>
+        	<iframe width="560" height="315" src="https://www.youtube.com/embed/YEfViJXmVJk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div style="float:left; width:100%;">
+    	</div>
+        </div>
+    </div>
+</div>
+<div class="popup-overlay"></div>
+
+
         <script src="js/vendor/jquery-1.11.2.min.js"></script>
        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
@@ -177,7 +289,44 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
 
         <script src="js/main.js"></script>
+<script>
+	// init controller
+	var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
 
+	// build scenes
+	new ScrollMagic.Scene({triggerElement: "#parallax1"})
+					.setTween("#parallax1 > div", {y: "80%", ease: Linear.easeNone})
+					//.addIndicators()
+					.addTo(controller);
+
+	//new ScrollMagic.Scene({triggerElement: "#parallax2"})
+					//.setTween("#parallax2 > div", {y: "80%", ease: Linear.easeNone})
+					//.addIndicators()
+					//.addTo(controller);
+
+	//new ScrollMagic.Scene({triggerElement: "#parallax3"})
+					//.setTween("#parallax3 > div", {y: "80%", ease: Linear.easeNone})
+					//.addIndicators()
+					//.addTo(controller);
+</script>
+
+
+<script>
+$(document).ready(function(){
+    $('#open').on('click', function(){
+        $('#popup').fadeIn('slow');
+        $('.popup-overlay').fadeIn('slow');
+        $('.popup-overlay').height($(window).height());
+        return false;
+    });
+ 
+    $('#close').on('click', function(){
+        $('#popup').fadeOut('slow');
+        $('.popup-overlay').fadeOut('slow');
+        return false;
+    });
+});
+</script>
         
     </body>
 </html>
