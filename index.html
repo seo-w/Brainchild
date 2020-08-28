@@ -206,11 +206,12 @@
 
 
 <section id="sbmodel" class="model3d">
-    <div class="sketchfab-embed-wrapper">
-    <iframe title="A 3D model" width="100%" height="600" src="https://sketchfab.com/models/23342772cb9e405196ddebad4c994ce6/embed?autostart=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-    
-</div>
-
+    <div class="wrapper">
+        <div class="sketchfab-embed-wrapper">
+            <iframe title="A 3D model" width="100%" height="600" src="https://sketchfab.com/models/23342772cb9e405196ddebad4c994ce6/embed?autostart=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            
+        </div>
+    </div>
 </section>
 
 
@@ -352,6 +353,7 @@ $(document).ready(function(){
 <script type="text/javascript">
   jQuery("p.model a").click(function() {
   jQuery("section.model3d iframe, section#sbmodel").css("height","80vh");
+  jQuery("section#sbmodel").css("padding" ,"7em 0");
 });
 </script>
 

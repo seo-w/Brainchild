@@ -718,7 +718,9 @@ p.model a{
     color: #000;
 
 }
-
+section#sbmodel {
+    
+}
 section.model3d iframe,section#sbmodel {
     height: 0;
 }
