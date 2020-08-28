@@ -38,8 +38,9 @@
                 <p>Brainchild is purpose-built to help every student master basic skills and achieve state standards.</p>
             </header>
             <div class="float-device">
-            	<img class="device" src="img/sbFrontFrame.png">
-            	<img class="float-video" src="img/giphy.gif">
+            	<!-- <img class="device" src="img/sbFrontFrame.png"> -->
+                <img class="device" src="img/study-buddy-3.png">
+            	<img class="float-video" src="img/sb3.gif">
             	<a id="open" class="play-button" href="#">
             	<img class="play-button" src="img/play.gif"></a>
             	<!-- <img class="device-shadow" src="img/shadow.png"> -->
@@ -86,6 +87,7 @@
 		height: 200%;
 		position: relative;
 		top: -100%;
+        background-size: cover;
 	}
 </style>
 <div class="spacer s0"></div>
@@ -173,26 +175,68 @@
 	                        <div class="col"><img src="img/multimedia.svg"><p>Multimedia instruction</p></div>
 	                        <div class="col"><img src="img/feedback.svg"><p>Practice <br><sub>with guided feedback</sub></p></div>
 	                        <div class="col"><img src="img/report.svg"><p>Test mode with <br><sub>“Review Mistakes”</sub></p></div>
-	                        <div class="col"><img src="img/Test.svg"><p>Progress report <br>to show scores</p></div>
+	                        <div class="col"><img src="img/Test.svg"><p>Progress report <br><sub>to show scores</sub></p></div>
                     	</div>
                     </section>
                 </div> <!-- .wrapper -->
             </article>
 
+
+
+
+
+
+
+
+
+<article id="slide011" class="slide fs">
+    <div class="bcg">
+               <h1 id="red"><img  src="img/cardtrige.png" width="280"></h1>
+                <div class="wrapper" style="text-align: center;">
+                   <!-- <img class="cardtrige" src="img/cardtrige.png" width="280"> -->
+                        <img class="device" src="img/studybuddy3-screen.png" width="700">
+                        <p class="model"><a href="#sbmodel">VIEW 3D MODEL <span><img src="img/model.png" width="64"></span></a></p>
+                    <section>
+                        
+                    </section></div>
+                </div> <!-- .wrapper -->
+            </article>
+<style type="text/css">#red{color:red;opacity: 0;text-align: center;}</style>
+
+
+
+<section id="sbmodel" class="model3d">
+    <div class="sketchfab-embed-wrapper">
+    <iframe title="A 3D model" width="100%" height="600" src="https://sketchfab.com/models/23342772cb9e405196ddebad4c994ce6/embed?autostart=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    
+</div>
+
+</section>
+
+
+
             <article id="cb02" class="content-block">
                 <div class="wrapper">
                     <header class="slideInUp">
-                        <h1>Study Buddy</h1>
+                        <h1 style="color=red;">Study Buddy</h1>
                     </header>
                     <section>
                         <p class="slideInUp slideInUp2">Getting to the top is optional. Getting down is mandatory.</p>
                        
                     </section>
+
+
+
+
+
+
+
                 </div> <!-- .wrapper -->
             </article>
 
             <article id="slide02" class="slide fs">
                 <div class="bcg"></div>
+                
                 <!--<div class="wrapper">
                     <header class="slideInUp">
                         <h1>The Climbing Addiction</h1>
@@ -212,19 +256,38 @@
                         <p class="slideInUp slideInUp2">When you get to the summit of the mountain, keep climbing.</p>
                     </section>
                 </div> <!-- .wrapper -->
+
+                
+                </div>
             </article>
 
-            
+        
+
+
+
 
         </div> <!-- #main-container -->
 
-       
+
+
+
+
+
+
+
+
+
+
+
+
+      
 
 <div id="popup" style="display: none;">
     <div class="content-popup">
         <div class="close"><a href="#" id="close"><img src="img/close.png"/></a></div>
         <div>
-        	<iframe width="560" height="315" src="https://www.youtube.com/embed/YEfViJXmVJk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MzNUk8B5pvs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        	
             <div style="float:left; width:100%;">
     	</div>
         </div>
@@ -284,5 +347,16 @@ $(document).ready(function(){
 });
 </script>
         
+
+
+<script type="text/javascript">
+  jQuery("p.model a").click(function() {
+  jQuery("section.model3d iframe, section#sbmodel").css("height","80vh");
+});
+</script>
+
+
+
+
     </body>
 </html>

@@ -7,7 +7,7 @@
 	var slides = ["#slide01", "#slide02", "#slide03"];
 
 	// get all headers in slides that trigger animation
-	var headers = ["#slide01 header", "#slide02 header", "#slide03 header"];
+	var headers = ["#slide01 header", "#slide02 header", "#slide03 header", "#slide011"];
 
 	// get all break up sections
 	var breakSections = ["#cb01", "#cb02", "#cb03"];
@@ -169,23 +169,52 @@
 
 	    pinScene01Tl
 	    	.to($('#slide01 h1'), 0.2, {autoAlpha: 0, ease:Power1.easeNone}, 1.5)
-	    	.to($('#slide01 section'), 0.2, {autoAlpha: 0, ease:Power1.easeNone}, 1.5)
-	    	.set($('#slide01 h1'), {text: 'Study Buddy'})
-	    	.set($('#slide01 p'), {text: ''})
-	    	.set($('#slide01 .icons'), {text: ''})
-	    	.set($('#slide01 .image'), {text: "<img class='device' src='img/sbFrontFrame.png'>"})
-	    	.fromTo($('#slide01 h1'), 0.7, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '+=0.4')
-	    	.fromTo($('#slide01 section'), 0.6, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.6')
-	    	.set($('#slide01 h1'), {autoAlpha: 1}, '+=2');
+	    	//.to($('#slide01 section'), 0.2, {autoAlpha: 0, ease:Power1.easeNone}, 1.5)
+	    	//.set($('#slide01 h1'), {text: 'Study Buddy'})
+	    	//.set($('#slide01 p'), {text: 'text 2'})
+	    	//.set($('#slide01 .icons'), {text: 'icons'})
+	    	//.set($('#slide01 .image'), {text: "<img class='device' src='img/sbFrontFrame.png'>"})
+	    	//.fromTo($('#slide01 h1'), 0.7, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '+=0.4')
+	    	//.fromTo($('#slide01 section'), 0.6, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.6')
+	    	//.set($('#slide01 h1'), {autoAlpha: 1}, '+=2');
 
-	    var pinScene01 = new ScrollMagic.Scene({
+	   var pinScene01 = new ScrollMagic.Scene({
 	        triggerElement: '#slide01', 
 	        triggerHook: 0,
-	        duration: "90%"
+	        duration: "60%"
 	    })
 	    .setPin("#slide01")
 	    .setTween(pinScene01Tl)
 	    .addTo(controller);
+
+
+
+
+	    //test
+	     var pinScene01c = new TimelineMax();
+
+	    pinScene01c
+	    	.to($('#slide011 h1'), 0.1, {autoAlpha: 0, ease:Power1.easeNone}, 1.5)
+	    	.to($('#slide011 img.cardtrige'), 0.2, {autoAlpha: 0, ease:Power1.easeNone}, 1.5)
+	    	//.to($('#slide01 section'), 0.2, {autoAlpha: 0, ease:Power1.easeNone}, 1.5)
+	    	//.set($('#slide01 h1'), {text: 'Study Buddy'})
+	    	//.set($('#slide01 p'), {text: 'text 2'})
+	    	//.set($('#slide01 .icons'), {text: 'icons'})
+	    	//.set($('#slide01 .image'), {text: "<img class='device' src='img/sbFrontFrame.png'>"})
+	    	.fromTo($('#slide011 h1'), 10.7, {y: '+=20'}, {y: 230, autoAlpha: 1, ease:Power1.easeOut}, '+=0.4')
+	    	.fromTo($('#slide011 img.cardtrige'),1,{x:0}, {x:100})
+	    	//.fromTo($('#slide01 section'), 0.6, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.6')
+	    	.set($('#slide01 h1'), {autoAlpha: 1}, '+=2');
+
+	   var pinScene01c = new ScrollMagic.Scene({
+	        triggerElement: '#slide011', 
+	        triggerHook: 0,
+	        duration: "95%"
+	    })
+	    .setPin("#slide011")
+	    .setTween(pinScene01c)
+	    .addTo(controller);
+
 
 	    // SCENE 7 - pin the second section
 	    // and update text
