@@ -216,6 +216,54 @@
 
 
 
+
+
+
+
+<article style="height: 100vh">
+    <div class="wrapper">
+        <!-- <form class="move">
+    <fieldset>
+        <legend>Toggle duration</legend>
+        <div>
+            <input type="radio" name="duration" id="bound" value="300" checked="">
+            <label for="bound">bound to scrollbar (duration = 300)</label>
+        </div>
+        <div>
+            <input type="radio" name="duration" id="unbound" value="0">
+            <label for="unbound">unbound from scrollbar (duration = 0)</label>
+        </div>
+    </fieldset>
+</form> -->
+<div class="half">
+<div class="spacer s2"></div>
+<div class="spacer s0" id="trigger"></div>
+<div id="imagesequence" style="height: 100vh">
+    <img id="myimg" src="img/d6.jpg">
+   
+</div>
+<div class="spacer s2"></div>
+
+    </div>
+
+    <div class="half">
+        <div class="spacer s2"></div>
+        <h2> No Wifi – No Problem</h2>
+        <h4>Software cartridges hold animations
+and 1,000 questions with feedback.</h4>
+<p>Scores can be exported with
+Study Buddy Grade Book.</p>
+
+        <div class="spacer s2"></div>
+    </div>
+</div>
+
+</article>
+
+
+
+
+
             <article id="cb02" class="content-block">
                 <div class="wrapper">
                     <header class="slideInUp">
@@ -247,6 +295,15 @@
                     </section>
                 </div>  .wrapper -->
             </article>
+
+
+
+
+
+
+
+
+
 
             <article id="cb03" class="content-block">
                 <div class="wrapper">
@@ -357,7 +414,50 @@ $(document).ready(function(){
 });
 </script>
 
+<script>
+    // define images
+    var images = [
+        "img/d1.jpg",
+        "img/d2.jpg",
+        "img/d3.jpg",
+        "img/d4.jpg",
+        "img/d5.jpg",
+        "img/d5.jpg",
+        "img/d5.jpg",
+        "img/d6.jpg"
+    ];
 
+    // TweenMax can tween any property of any object. We use this object to cycle through the array
+    var obj = {curImg: 0};
+
+    // create tween
+    var tween = TweenMax.to(obj, 0.5,
+        {
+            curImg: images.length - 1,  // animate propery curImg to number of images
+            roundProps: "curImg",               // only integers so it can be used as an array index
+            repeat: 0,                                  // repeat 3 times
+            immediateRender: true,          // load first image automatically
+            ease: Linear.easeNone,          // show every image the same ammount of time
+            onUpdate: function () {
+              $("#myimg").attr("src", images[obj.curImg]); // set the image source
+            }
+        }
+    );
+
+    // init controller
+    var controller = new ScrollMagic.Controller();
+
+    // build scene
+    var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 400})
+                    .setTween(tween)
+                    //.addIndicators() // add indicators (requires plugin)
+                    .addTo(controller);
+
+    // handle form change
+    $("form.move input[name=duration]:radio").change(function () {
+        scene.duration($(this).val());
+    });
+</script>
 
 
     </body>
