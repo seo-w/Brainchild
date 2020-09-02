@@ -201,7 +201,7 @@
 	    	//.set($('#slide01 p'), {text: 'text 2'})
 	    	//.set($('#slide01 .icons'), {text: 'icons'})
 	    	//.set($('#slide01 .image'), {text: "<img class='device' src='img/sbFrontFrame.png'>"})
-	    	.fromTo($('#slide011 h1'), 10.7, {y: '+=20'}, {y: 230, autoAlpha: 1, ease:Power1.easeOut}, '+=0.4')
+	    	.fromTo($('#slide011 h1'), 10.7, {y: '+=20'}, {y: '+=130%', autoAlpha: 1, ease:Power1.easeOut}, '+=0.4')
 	    	.fromTo($('#slide011 img.cardtrige'),1,{x:0}, {x:100})
 	    	//.fromTo($('#slide01 section'), 0.6, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.6')
 	    	.set($('#slide01 h1'), {autoAlpha: 1}, '+=2');

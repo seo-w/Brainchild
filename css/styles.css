@@ -287,10 +287,10 @@ h1 {
     background-image: url(../img/wave3.jpg);
     background-size: cover; background-position: center; }
   #slide01 .bcg {
-    background: url(../img/bg2.jpg) no-repeat center center;
+    background: url(../img/bg22.jpg) no-repeat center center;
     background-size: cover; }
   #slide011 .bcg {
-    background: url(../img/bg3.jpg) no-repeat center center;
+    background: url(../img/bg33.jpg) no-repeat center center;
     background-size: cover; }
     
   #slide02 .bcg {
@@ -433,6 +433,8 @@ p {
     color: #000000; }
 
 /* =Content Block */
+.content-block2 { background-color: #278DCF;}
+.content-block2 img{ width: 100%; }
 .content-block {
   background-color: #212121;
    background-image: url(../img/child-classroom.jpg);
@@ -734,6 +736,10 @@ section.model3d iframe,section#sbmodel {
 }	
 img#myimg {
     width: 100%;
+}
+
+img.device {
+   /* margin-top: 5%;*/
 }
 
 @keyframes floating {
