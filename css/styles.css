@@ -857,3 +857,15 @@ article#cb01 {
 .blue {
     background-color: #3883d8;
 }
+
+
+@media	screen and (min-width: 1441px){
+	.float-device {
+    position: absolute;
+    bottom: 130px;
+    left: 50%;
+    animation: floating 10s infinite;
+    width: 32%;
+    z-index: 1;
+}
+}
