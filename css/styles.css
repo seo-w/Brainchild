@@ -684,20 +684,31 @@ p {
           margin-bottom: 2%;
     display: block;
 }
+a.logo img {
+    max-width: 514px;
+    width: 100%;
+}
+.prelogo img {
+    max-width: 514px;
+    width: 100%;
+}
+.bcg img.device {
+    max-width: 100%;
+}	
 .float-device {
     position: absolute;
     bottom: 130px;
     left: 50%;
     animation: floating 10s infinite;
-
+    width: 39%;
     z-index: 1;
 
 }
 .float-video{
 	position: absolute;
-    left: 21.7%;
-    width: 57%;
-    top: 25.3%;
+    left: 22.3%;
+    width: 55.8%;
+    top: 25.7%;
 }
 img.play-button {
     position: absolute;
@@ -738,8 +749,9 @@ img#myimg {
     width: 100%;
 }
 
-img.device {
+.float-device img.device {
    /* margin-top: 5%;*/
+       width: 100%;
 }
 
 @keyframes floating {
@@ -762,12 +774,14 @@ article#cb01 {
 
 
 .icons {
-    display: inline-flex;
+    display: inline-block;
         margin-top: 40px;
+        width: 100%;
 }
 .icons .col {
     width: 250px;
     padding: 8px;
+    float: left;
 }
 .icons .col img {
     width: 75%;
