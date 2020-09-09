@@ -896,6 +896,15 @@ article#slide02 h4, article#slide02 p{
 
 }
 
+section#cb05 {
+    background-image: url(https://www.brainchild.com/hs-fs/hubfs/03-Images/Background/Background_CTALarge-Yellow.png);
+    padding: 3em 0 2em;
+    text-align: center;
+    color: #fff;
+}
+section#cb05 h2 {
+    font-size: 4em;
+}
 @media	screen and (min-width: 1441px){
 	.float-device {
     position: absolute;
