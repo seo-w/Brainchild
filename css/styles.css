@@ -875,6 +875,18 @@ article#cb01 {
 .blue {
     background-color: #3883d8;
 }
+.easy .wrapper {
+    display: flex;
+        padding-left: 20px;
+    padding-right: 20px;
+}
+.easy .wrapper li {
+    text-align: left;
+}
+.easy .wrapper ul.bigli li{
+  text-align: center;
+  font-size: 2em;
+}
 article#slide02 h1 {
     color: #000;
     font-size: 4.5em;
