@@ -294,8 +294,9 @@ h1 {
     background-size: cover; }
     
   #slide02 .bcg {
-    background: url(../img/img_mountains03.jpg) no-repeat center center;
-    background-size: cover; }
+  	background: url(../img/Content_SucessForSelfPacedLearning.webp) no-repeat right center;
+   /* background: url(../img/img_mountains03.jpg) no-repeat center center;*/
+    /*background-size: cover;*/ }
   #slide03 .bcg {
     background: url(../img/img_mountains04.jpg) no-repeat center center;
     background-size: cover;
@@ -857,7 +858,14 @@ article#cb01 {
 .blue {
     background-color: #3883d8;
 }
+article#slide02 h1 {
+    color: #000;
+    font-size: 4.5em;
+}
+article#slide02 h4, article#slide02 p{
+    color: #000;
 
+}
 
 @media	screen and (min-width: 1441px){
 	.float-device {

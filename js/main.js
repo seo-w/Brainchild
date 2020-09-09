@@ -201,9 +201,9 @@
 	    	//.set($('#slide01 p'), {text: 'text 2'})
 	    	//.set($('#slide01 .icons'), {text: 'icons'})
 	    	//.set($('#slide01 .image'), {text: "<img class='device' src='img/sbFrontFrame.png'>"})
-	    	.fromTo($('#slide011 h1'), 10.7, {y: '+=20'}, {y: '+=130%', autoAlpha: 1, ease:Power1.easeOut}, '+=0.4')
+	    	.fromTo($('#slide011 h1'), 1.7, {y: '+=20'}, {y: '+=130%', autoAlpha: 1, ease:Power1.easeOut}, '+=0.4')
 	    	.fromTo($('#slide011 img.cardtrige'),1,{x:0}, {x:100})
-	    	.fromTo($('#slide011 .sb3-img'),5,{autoAlpha: 1, ease:Power1.easeOut}, {autoAlpha: 0, ease:Power1.easeOut})
+	    	.fromTo($('#slide011 .sb3-img'),1,{autoAlpha: 1, ease:Power1.easeOut}, {autoAlpha: 0, ease:Power1.easeOut,delay:5})
 	    	
 
 	    	//.fromTo($('#slide01 section'), 0.6, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.6')
@@ -212,7 +212,7 @@
 	   var pinScene01c = new ScrollMagic.Scene({
 	        triggerElement: '#slide011', 
 	        triggerHook: 0,
-	        duration: "95%"
+	        duration: "96%"
 	    })
 	    .setPin("#slide011")
 	    .setTween(pinScene01c)
@@ -227,9 +227,10 @@
 	    pinScene02Tl
 	    	.to($('#slide02 h1'), 0.2, {autoAlpha: 0, ease:Power1.easeNone}, 1.5)
 	    	.to($('#slide02 section'), 0.2, {autoAlpha: 0, ease:Power1.easeNone}, 1.5)
-	    	.set($('#slide02 h1'), {text: "The Memories"})
-	    	.set($('#slide02 p'), {text: "You never climb the same mountain twice, not even in memory. Memory rebuilds the mountain, changes the weather, retells the jokes, remakes all the moves."})
-	    	.to($('#slide02 .bcg'), 0.6, {scale: 1.2, transformOrigin: '0% 0%', ease:Power0.easeNone})
+	    	.set($('#slide02 h1'), {text: "<img id='myimg2' src='img/d5.jpg'>"})
+	    	.set($('#slide02 p'), {text: "<h4>Software cartridges hold animations and 1,000 questions with feedback.</h4><p>Scores can be exported with Study Buddy Grade Book.</p>"})
+	    	.to($('#slide02 bcg'), 0.2, {autoAlpha: 0, ease:Power1.easeNone}, 1.5)
+	    	.to($('#slide02 .bcg'), 0.6, {scale: 1.3, transformOrigin: '60% 50%', ease:Power0.easeNone})
 	    	.fromTo($('#slide02 h1'), 0.7, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '+=0.4')
 	    	.fromTo($('#slide02 section'), 0.6, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.6')
 	    	.set($('#slide02 h1'), {autoAlpha: 1}, '+=2.5');
@@ -263,6 +264,59 @@
 				}
 			}
 		});
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*var controller = new ScrollMagic.Controller();
+
+var tweens = new TimelineMax()
+.add($('.dos'), 0.6, {scale: 1.2, transformOrigin: '0% 0%', ease:Power0.easeNone})
+    /*.add(TweenMax.to(".dos", 1, {transform: "translateY(0)"}),"first")
+    .add(TweenMax.to(".tres", 1, {transform: "translateY(0)"}),"second")
+    .add(TweenMax.to(".cuatro", 1, {transform: "translateY(0)"}), "third");*/
+/*
+var scene = new ScrollMagic.Scene({
+    triggerElement: '.numeros .wrapper',
+    triggerHook: "onLeave",
+    duration: "500%"
+})
+.setTween(tweens)
+.setPin('.numeros .wrapper')
+.addIndicators()
+.addTo(controller);*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	}
 
