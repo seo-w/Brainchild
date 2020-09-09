@@ -227,8 +227,8 @@
 	    pinScene02Tl
 	    	.to($('#slide02 h1'), 0.2, {autoAlpha: 0, ease:Power1.easeNone}, 1.5)
 	    	.to($('#slide02 section'), 0.2, {autoAlpha: 0, ease:Power1.easeNone}, 1.5)
-	    	.set($('#slide02 h1'), {text: "<img id='myimg2' src='img/d5.jpg'>"})
-	    	.set($('#slide02 p'), {text: "<h4>Software cartridges hold animations and 1,000 questions with feedback.</h4><p>Scores can be exported with Study Buddy Grade Book.</p>"})
+	    	.set($('#slide02 h1'), {text: "<img id='myimg2' src='img/dev-hands.gif' width='500'>"})
+	    	.set($('#slide02 p'), {text: "<h2>NO WIFI NO PROBLEM<h2><h4>Software cartridges hold animations and 1,000 questions with feedback.</h4><p>Scores can be exported with Study Buddy Grade Book.</p>"})
 	    	.to($('#slide02 bcg'), 0.2, {autoAlpha: 0, ease:Power1.easeNone}, 1.5)
 	    	.to($('#slide02 .bcg'), 0.6, {scale: 1.3, transformOrigin: '60% 50%', ease:Power0.easeNone})
 	    	.fromTo($('#slide02 h1'), 0.7, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '+=0.4')

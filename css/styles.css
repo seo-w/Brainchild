@@ -438,8 +438,8 @@ p {
 .content-block2 img{ width: 100%; }
 .content-block {
   background-color: #212121;
-   background-image: url(../img/child-classroom.jpg);
-  color: rgba(255, 255, 255, 0.9); }
+   background-image: url(../img/class2.jpg);
+  color: rgba(255, 255, 255, 0.9); background-size: cover;}
   .content-block .wrapper {
     padding: 30px 0;
     text-align: center; }
@@ -736,7 +736,24 @@ section#sbmodel {
     
 }
 section.model3d iframe,section#sbmodel {
-    height: 0;
+   /* height: 0;*/
+}
+.easy h1{
+	font-size: 4em;
+}
+.easy h1, .easy p, .easy li, .easy h2 {
+    color: #000;
+}
+.easy li{
+
+    font-size: 1.4em;
+}
+.easy ul{
+	list-style: none;
+	padding-left: 0px;
+}
+.easy .wrapper{
+	background-color: rgb(255 255 255 / 60%);
 }
 
 .spacer.s2 {
